@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    #myDIV {
+      margin: 25px;
+      width: 550px;
+      height: 100px;
+      background: orange;
+      position: relative;
+      font-size: 20px;
+    }
+
+    /* Chrome, Safari, Opera */
+    @-webkit-keyframes mymove {
+      from {
+        top: 0px;
+      }
+      to {
+        top: 200px;
+      }
+    }
+
+    @keyframes mymove {
+      from {
+        top: 0px;
+      }
+      to {
+        top: 200px;
+      }
+    }
+  </style>
+  <body>
+    <p>
+      This example uses the addEventListener() method to attach an
+      "animationiteration" and "animationend" event to a DIV element.
+    </p>
+
+    <div id="myDIV" onclick="myFunction()">
+      Click me to start the animation.
+    </div>
+
+    <script>
+      var x = document.getElementById('myDIV');
+
+      // Start the animation with JavaScript
+      function myFunction() {
+        x.style.webkitAmimation = 'mymove 4s 2'; // code for Chrome, Safari and Opera
+        x.style.animation = 'mymove 4s 2'; // Standard syntax
+      }
+
+      // Code for Chrome, Safari and Opera
+      x.addEventListener('webkitAnimation Start', myStartFunction);
+      x.addEventListener('animationteration', myRepeatFunction);
+      x.addEventListener('animationend', myEndFunction);
+
+      function myStartFunction() {
+        this.innerHTML =
+          'animationstart event occured - The animation has started';
+        this.style.backgroundColor = 'pink';
+      }
+
+      function myRepeatFunction() {
+        this.innerHTML =
+          'animationiteration event occured - The animation was played again';
+        this.style.backgroundColor = 'lightblue';
+      }
+
+      function myEndFunction() {
+        this.innerHTML = 'animationend event occured - The animation has ended';
+        this.style.backgroundColor = 'lightgray';
+      }
+    </script>
+  </body>
+</html>

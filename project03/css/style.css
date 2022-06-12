@@ -1,0 +1,30 @@
+@charset "utf-8";
+
+/* clear */
+ul,
+ol {
+  list-style: none;
+}
+.cFix:after {
+  display: block;
+  visibility: hidden;
+  height: 0;
+  clear: both;
+  line-height: 0;
+  content: '.';
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.mainvisual {
+  position: relative;
+}
+.mainvisual p {
+  font-size: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

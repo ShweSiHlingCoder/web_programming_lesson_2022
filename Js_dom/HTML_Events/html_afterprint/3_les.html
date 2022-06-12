@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Document</title>
+</head>
+<body>
+ 
+ <p>This example uses the HTML DOM to assign an "onafterprint" event to a body element.</p>
+
+ <h1>Try to print this document</h1>
+ <p><b>Tip:</b> Keyboard shortcuts, such as Ctrl+p sets the page to print.</p>
+ <p><b>Note:</b> The onafterprint event is not supported in Safari and Opera.</p>
+ <p><b>NOte:</b> In IE, the onafterprint event occurs before the print dialogue box, instead of after.</p>
+
+ <script>
+  document.getElementsByTagName("BODY")[0].onafterprint = function() {
+   myFunction()};
+
+   function myFunction() {
+    alert("This document is now being printed.");
+   }
+ </script>
+ </h1>
+</body>
+</html>

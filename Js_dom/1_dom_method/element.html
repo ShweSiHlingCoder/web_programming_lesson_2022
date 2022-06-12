@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="intro">Hello world</p>
+    <p id="demo"></p>
+
+    <script>
+      const element_var = document.getElementById('intro');
+      // document.write(element_var);
+
+      document.getElementById('demo').innerHTML =
+        'Hello World_2' +
+        'this is html element paragraph :' +
+        element_var.innerHTML;
+    </script>
+  </body>
+</html>

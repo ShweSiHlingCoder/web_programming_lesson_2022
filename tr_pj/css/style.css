@@ -1,0 +1,82 @@
+@charset "utf-8";
+ul,
+ol {
+  list-style: none;
+}
+.cFix:after {
+  display: block;
+  visibility: hidden;
+  height: 0;
+  clear: both;
+  line-height: 0;
+  content: '.';
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  width: 100%;
+}
+.wrapper {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.header {
+  padding: 20px 0;
+  background: url(../img/carousel-2.jpg);
+}
+.header h1 {
+  width: 230px;
+  margin: 0 auto;
+  font-size: 50px;
+  color: #f195b2;
+  text-align: center;
+  border-bottom: 4px dotted #62c3e7;
+}
+.header h1 span {
+  color: #62c3e7;
+}
+.nav {
+  display: flex;
+  width: 100%;
+  background: #f195b2;
+}
+.nav li a {
+  color: #fff;
+  padding: 20px;
+  display: block;
+}
+.nav li a:hover {
+  color: #62c3e7;
+  transition: 1s;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+.main01,
+.main02,
+.main03 {
+  width: 32%;
+}
+.container .image {
+  margin-bottom: 10px;
+}
+.container .image:last-child {
+  margin-bottom: 0;
+}
+.footer {
+  font-size: 20px;
+  background: #f195b2;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+}

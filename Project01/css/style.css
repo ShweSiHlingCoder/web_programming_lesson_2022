@@ -1,0 +1,81 @@
+@charset "utf-8";
+
+/* clear */
+ul,
+ol {
+  list-style: none;
+}
+.cFix:after {
+  display: block;
+  visibility: hidden;
+  height: 0;
+  clear: both;
+  line-height: 0;
+  content: '.';
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.wrapper {
+  width: 600px;
+  margin: 0 auto;
+}
+.header {
+  border: 1px solid #010;
+}
+.header p {
+  padding: 20px 0 20px 0;
+  text-align: center;
+  font-weight: bold;
+  font-size: 25px;
+}
+.item-gp {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0 20px 0;
+}
+
+.item-gp li {
+  border: 1px solid #010;
+}
+.carousel-gallery {
+  border: 1px solid #010;
+  margin-top: 10px;
+}
+.carousel-gallery p {
+  padding: 40px 0;
+  text-align: center;
+  font-weight: bold;
+  font-size: 25px;
+}
+.item-gp li {
+  width: 140px;
+  padding: 20px 0;
+  text-align: center;
+  color: green;
+}
+.SHWE_item {
+  display: flex;
+  justify-content: space-between;
+}
+.SHWE_item li {
+  width: 292px;
+  border: 1px solid #010;
+  padding: 20px 0;
+  text-align: center;
+  color: green;
+}
+.FOOTER {
+  border: 1px solid #010;
+  margin-top: 20px;
+  text-align: center;
+  padding: 40px 0;
+  font-weight: bold;
+}
+.FOOTER p {
+  padding: 9px;
+  font-size: 20px;
+}
